@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="bindingData"
+            type="com.perusudroid.kotlinrecyclerview.binding.BindingData"/>
+    </data>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{bindingData.firstname}" />
+
+        <TextView
+            android:id="@+id/tvTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{bindingData.lastname}"
+            app:layout_constraintTop_toBottomOf="@+id/tvOne" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
