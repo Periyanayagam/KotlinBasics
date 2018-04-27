@@ -1,4 +1,4 @@
-package com.perusudroid.kotlinbasics.sample
+package com.perusudroid.kotlinbasics.normal.sample
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
