@@ -15,10 +15,11 @@ object ApiClient {
 
     val apiInterface: ApiInterface
 
+    //https://jsonplaceholder.typicode.com
 
     // php file included in source code
     val retrofit: Retrofit = Retrofit.Builder()
-            .baseUrl("http://192.168.0.114/")
+            .baseUrl("https://jsonplaceholder.typicode.com")
             .client(getHttpClient())
             .addConverterFactory(GsonConverterFactory.create())
             .build()

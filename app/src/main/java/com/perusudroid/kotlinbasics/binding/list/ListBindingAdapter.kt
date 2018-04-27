@@ -28,6 +28,7 @@ class ListBindingAdapter(var list: List<ListData>): RecyclerView.Adapter<ListBin
     override fun onBindViewHolder(holder: ListBindingViewHolder?, position: Int) {
         val bindingData: ListData = list.get(position)
         holder?.bindingData?.albumData = bindingData
+        holder?.bindingData?.executePendingBindings()
     }
 
 

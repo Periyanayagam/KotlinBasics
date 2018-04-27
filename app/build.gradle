@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId "com.perusudroid.kotlinbasics"
         minSdkVersion 15
-        targetSdkVersion 26
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -51,7 +51,6 @@ dependencies {
     //logs HTTP request and response data
     implementation 'com.google.code.gson:gson:2.2.4'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
-
 
     //Image Loading Lib
     implementation 'com.squareup.picasso:picasso:2.5.2'

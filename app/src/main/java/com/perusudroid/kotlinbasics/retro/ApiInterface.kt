@@ -12,6 +12,6 @@ interface ApiInterface {
     @GET("kotlin.php")
     fun getSample() : Call<SampleResponse>
 
-    @GET("kotlin_data.php")
+    @GET("photos")
     fun getData() : Call<List<ListData>>
 }
