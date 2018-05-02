@@ -1,4 +1,4 @@
-package com.perusudroid.kotlinrecyclerview.binding
+package com.perusudroid.kotlinbasics.binding.sample
 
 /**
  * Created by Intel on 25-04-2018.

@@ -9,11 +9,12 @@ import com.perusudroid.kotlinbasics.R
 import com.perusudroid.kotlinbasics.databinding.ActivityListBinding
 import com.perusudroid.kotlinbasics.model.ListData
 import com.perusudroid.kotlinbasics.retro.ApiClient
+import org.jetbrains.anko.toast
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class ListActivity : AppCompatActivity(), Callback<List<ListData>> {
+class ListActivity : AppCompatActivity(), Callback<List<ListData>>, IListener {
 
     private var binding: ActivityListBinding? = null
 
@@ -32,7 +33,7 @@ class ListActivity : AppCompatActivity(), Callback<List<ListData>> {
     override fun onResponse(call: Call<List<ListData>>?, response: Response<List<ListData>>?) {
         if (response!!.isSuccessful) {
             if (response.body() != null) {
-                binding?.rView?.adapter = ListBindingAdapter(response.body() as List<ListData>)
+                binding?.rView?.adapter = ListBindingAdapter(response.body() as List<ListData>, this)
             }
         }
     }
@@ -41,4 +42,8 @@ class ListActivity : AppCompatActivity(), Callback<List<ListData>> {
         Log.d("API", t?.localizedMessage)
     }
 
+    override fun onItemClicked(listData: ListData) {
+        toast("Clicked ${listData.title}")
+    }
 }
+

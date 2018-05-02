@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".normal.list.NormalListActivity">
+        <activity
+            android:name=".binding.sample.DataActivity"
+            android:label="@string/title_activity_launch">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +22,13 @@
         </activity>
         <activity android:name=".normal.sample.SampleActivity" />
         <activity android:name=".binding.login.LoginBindActivity" />
+        <activity android:name="normal.basic.BasicActivity" />
         <activity android:name=".binding.list.ListActivity" />
+        <activity
+            android:name=".binding.nav.LaunchBindingActivity"
+            android:theme="@style/AppThemeNoAction" />
+        <activity android:name=".normal.basic.DataActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

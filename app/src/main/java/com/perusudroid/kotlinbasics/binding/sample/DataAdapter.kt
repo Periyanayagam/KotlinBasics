@@ -1,4 +1,4 @@
-package com.perusudroid.kotlinbasics.binding
+package com.perusudroid.kotlinbasics.binding.sample
 
 import android.databinding.DataBindingUtil
 import android.support.v7.widget.RecyclerView
@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.perusudroid.kotlinbasics.R
 import com.perusudroid.kotlinbasics.databinding.InflaterBindingSampleBinding
-import com.perusudroid.kotlinrecyclerview.binding.BindingData
 
 
 /**

@@ -5,7 +5,7 @@
     <data>
         <variable
             name="bindingData"
-            type="com.perusudroid.kotlinrecyclerview.binding.BindingData"/>
+            type="com.perusudroid.kotlinbasics.binding.sample.BindingData"/>
     </data>
 
 
