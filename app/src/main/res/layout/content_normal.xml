@@ -17,31 +17,31 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnBasics"
+        android:id="@+id/btnNormalBasic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/basics"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+        app:layout_constraintTop_toBottomOf="@+id/btnNormalList" />
 
     <Button
-        android:id="@+id/btnList"
+        android:id="@+id/btnNormalList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/list"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBasics" />
+        app:layout_constraintTop_toBottomOf="@+id/btnNormalSample" />
 
     <Button
-        android:id="@+id/btnSample"
+        android:id="@+id/btnNormalSample"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sample"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnList" />
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
 
 
 </android.support.constraint.ConstraintLayout>

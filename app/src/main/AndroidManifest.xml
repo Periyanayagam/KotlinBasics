@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".binding.sample.DataActivity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_launch">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,9 @@
             android:name=".binding.nav.LaunchBindingActivity"
             android:theme="@style/AppThemeNoAction" />
         <activity android:name=".normal.basic.DataActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".binding.sample.DataActivity"/>
+        <activity android:name=".normal.basic.BasicActivity"/>
+        <activity android:name=".normal.list.NormalListActivity"/>
     </application>
 
 </manifest>
