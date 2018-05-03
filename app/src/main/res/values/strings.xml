@@ -3,7 +3,7 @@
     <string name="email">Email</string>
     <string name="pass">Password</string>
     <string name="description">description</string>
-    <string name="title_activity_launch">LaunchActivity</string>
+    <string name="title_activity_launch">KotlinBasics</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
