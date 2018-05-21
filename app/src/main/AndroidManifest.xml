@@ -28,9 +28,11 @@
             android:name=".binding.nav.LaunchBindingActivity"
             android:theme="@style/AppThemeNoAction" />
         <activity android:name=".normal.basic.DataActivity" />
-        <activity android:name=".binding.sample.DataActivity"/>
-        <activity android:name=".normal.basic.BasicActivity"/>
-        <activity android:name=".normal.list.NormalListActivity"/>
+        <activity android:name=".binding.sample.DataActivity" />
+        <activity android:name=".normal.basic.BasicActivity" />
+        <activity android:name=".normal.list.NormalListActivity" />
+        <activity android:name=".normal.viewmodel.MyNormalViewActivity"/>
+        <activity android:name=".binding.viewmodel.MyViewActivity"/>
     </application>
 
 </manifest>

@@ -9,9 +9,10 @@ import com.perusudroid.kotlinbasics.binding.list.ListActivity
 import com.perusudroid.kotlinbasics.binding.login.LoginBindActivity
 import com.perusudroid.kotlinbasics.binding.nav.LaunchBindingActivity
 import com.perusudroid.kotlinbasics.normal.basic.BasicActivity
-import com.perusudroid.kotlinbasics.normal.basic.DataActivity
 import com.perusudroid.kotlinbasics.normal.list.NormalListActivity
 import com.perusudroid.kotlinbasics.normal.sample.SampleActivity
+import com.perusudroid.kotlinbasics.binding.viewmodel.MyViewActivity
+import com.perusudroid.kotlinbasics.normal.viewmodel.MyNormalViewActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -23,6 +24,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private var btnLogin: Button? = null
     private var btnList: Button? = null
     private var btnNav: Button? = null
+    private var btnVM: Button? = null
+    private var btnViewModel: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +42,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnLogin = findViewById(R.id.btnLogin)
         btnList = findViewById(R.id.btnList)
         btnNav = findViewById(R.id.btnNav)
+        btnVM = findViewById(R.id.btnVM)
+        btnViewModel = findViewById(R.id.btnViewModel)
     }
 
     private fun setAssets() {
@@ -49,6 +54,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnLogin?.setOnClickListener(this)
         btnList?.setOnClickListener(this)
         btnNav?.setOnClickListener(this)
+        btnVM?.setOnClickListener(this)
+        btnViewModel?.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -73,6 +80,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.btnNav -> {
                 startActivity(Intent(this, LaunchBindingActivity::class.java))
+            }
+            R.id.btnVM -> {
+                startActivity(Intent(this, MyViewActivity::class.java))
+            }
+            R.id.btnViewModel -> {
+                startActivity(Intent(this, MyNormalViewActivity::class.java))
             }
         }
     }

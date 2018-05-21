@@ -11,7 +11,13 @@ import com.perusudroid.kotlinbasics.R
 import com.perusudroid.kotlinbasics.model.ListData
 import com.squareup.picasso.Picasso
 
-class NormalListAdapter(val list: List<ListData>, var listener: IClickListener) : RecyclerView.Adapter<NormalListAdapter.NormalViewHolder>() {
+class NormalListAdapter(var list: MutableList<ListData>, var listener: IClickListener) : RecyclerView.Adapter<NormalListAdapter.NormalViewHolder>() {
+
+
+    public fun refresh(listx: MutableList<ListData>?) {
+        list = listx!!
+        notifyDataSetChanged()
+    }
 
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): NormalViewHolder =
@@ -42,6 +48,7 @@ class NormalListAdapter(val list: List<ListData>, var listener: IClickListener) 
         var rootLay: ConstraintLayout? = null
         var listener: IClickListener = listenerx
 
+
         init {
             ivPic = itemView.findViewById(R.id.image_photo_thumbnail)
             tvTxt = itemView.findViewById(R.id.text_photo_title)
@@ -52,7 +59,7 @@ class NormalListAdapter(val list: List<ListData>, var listener: IClickListener) 
         override fun onClick(view: View?) {
             when (view?.id) {
                 R.id.rootLay -> {
-                    listener.onItemClick( view.tag as ListData)
+                    listener.onItemClick(view.tag as ListData, adapterPosition)
                 }
             }
         }

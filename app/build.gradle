@@ -5,11 +5,11 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     defaultConfig {
         applicationId "com.perusudroid.kotlinbasics"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -51,7 +51,9 @@ dependencies {
     //logs HTTP request and response data
     implementation 'com.google.code.gson:gson:2.2.4'
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
-
     //Image Loading Lib
     implementation 'com.squareup.picasso:picasso:2.5.2'
+    //lifecycle
+    implementation "android.arch.lifecycle:extensions:1.1.0"
+    implementation "android.arch.lifecycle:viewmodel:1.1.0"
 }

@@ -7,6 +7,6 @@ import com.perusudroid.kotlinbasics.model.ListData
  */
 interface IClickListener {
 
-    fun onItemClick(listData : ListData)
+    fun onItemClick(listData: ListData, adapterPosition: Int)
 
 }

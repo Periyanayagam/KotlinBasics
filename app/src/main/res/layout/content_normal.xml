@@ -17,6 +17,15 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/btnViewModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_model"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNormalBasic" />
+
+    <Button
         android:id="@+id/btnNormalBasic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

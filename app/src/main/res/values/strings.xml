@@ -16,4 +16,5 @@
     <string name="sample">Sample</string>
     <string name="binding">Binding</string>
     <string name="login">Login</string>
+    <string name="view_model">View Model</string>
 </resources>
