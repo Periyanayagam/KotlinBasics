@@ -31,8 +31,11 @@
         <activity android:name=".binding.sample.DataActivity" />
         <activity android:name=".normal.basic.BasicActivity" />
         <activity android:name=".normal.list.NormalListActivity" />
-        <activity android:name=".normal.viewmodel.MyNormalViewActivity"/>
-        <activity android:name=".binding.viewmodel.MyViewActivity"/>
+        <activity android:name=".normal.viewmodel.MyNormalViewActivity" />
+        <activity android:name=".binding.viewmodel.MyViewActivity" />
+        <activity android:name=".normal.sharedpref.SharedPrefActivity" />
+        <activity android:name=".prefs.SharedPrefActivity" />
+        <activity android:name=".normal.basic.OperatorActivity"/>
     </application>
 
 </manifest>

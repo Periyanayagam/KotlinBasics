@@ -10,6 +10,7 @@ import com.perusudroid.kotlinbasics.R
 import com.perusudroid.kotlinbasics.databinding.ActivityLoginBinding
 import com.perusudroid.kotlinbasics.model.SampleResponse
 import com.perusudroid.kotlinbasics.retro.ApiClient
+import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

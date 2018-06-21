@@ -12,6 +12,7 @@ import com.perusudroid.kotlinbasics.normal.basic.BasicActivity
 import com.perusudroid.kotlinbasics.normal.list.NormalListActivity
 import com.perusudroid.kotlinbasics.normal.sample.SampleActivity
 import com.perusudroid.kotlinbasics.binding.viewmodel.MyViewActivity
+import com.perusudroid.kotlinbasics.normal.sharedpref.SharedPrefActivity
 import com.perusudroid.kotlinbasics.normal.viewmodel.MyNormalViewActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private var btnList: Button? = null
     private var btnNav: Button? = null
     private var btnVM: Button? = null
+    private var btnPref: Button? = null
     private var btnViewModel: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,6 +45,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnList = findViewById(R.id.btnList)
         btnNav = findViewById(R.id.btnNav)
         btnVM = findViewById(R.id.btnVM)
+        btnPref = findViewById(R.id.btnPref)
         btnViewModel = findViewById(R.id.btnViewModel)
     }
 
@@ -55,38 +58,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnList?.setOnClickListener(this)
         btnNav?.setOnClickListener(this)
         btnVM?.setOnClickListener(this)
+        btnPref?.setOnClickListener(this)
         btnViewModel?.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when (v?.id) {
-            R.id.btnNormalBasic -> {
-                startActivity(Intent(this, BasicActivity::class.java))
-            }
-            R.id.btnNormalList -> {
-                startActivity(Intent(this, NormalListActivity::class.java))
-            }
-            R.id.btnNormalSample -> {
-                startActivity(Intent(this, SampleActivity::class.java))
-            }
-            R.id.btnSample -> {
-                startActivity(Intent(this, com.perusudroid.kotlinbasics.binding.sample.DataActivity::class.java))
-            }
-            R.id.btnLogin -> {
-                startActivity(Intent(this, LoginBindActivity::class.java))
-            }
-            R.id.btnList -> {
-                startActivity(Intent(this, ListActivity::class.java))
-            }
-            R.id.btnNav -> {
-                startActivity(Intent(this, LaunchBindingActivity::class.java))
-            }
-            R.id.btnVM -> {
-                startActivity(Intent(this, MyViewActivity::class.java))
-            }
-            R.id.btnViewModel -> {
-                startActivity(Intent(this, MyNormalViewActivity::class.java))
-            }
+            R.id.btnNormalBasic -> startActivity(Intent(this, BasicActivity::class.java))
+            R.id.btnNormalList -> startActivity(Intent(this, NormalListActivity::class.java))
+            R.id.btnNormalSample -> startActivity(Intent(this, SampleActivity::class.java))
+            R.id.btnSample -> startActivity(Intent(this, com.perusudroid.kotlinbasics.binding.sample.DataActivity::class.java))
+            R.id.btnLogin -> startActivity(Intent(this, LoginBindActivity::class.java))
+            R.id.btnList -> startActivity(Intent(this, ListActivity::class.java))
+            R.id.btnNav -> startActivity(Intent(this, LaunchBindingActivity::class.java))
+            R.id.btnVM -> startActivity(Intent(this, MyViewActivity::class.java))
+            R.id.btnViewModel -> startActivity(Intent(this, MyNormalViewActivity::class.java))
+            R.id.btnPref -> startActivity(Intent(this, SharedPrefActivity::class.java))
         }
     }
 }
